@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../../styles/minesweeper.css">
+    <title>Minesweeper</title>
+</head>
+
+<body>
+    <p id="message"></p>
+
+    <div id="page">
+        <div id="nav">
+            <div class="center">
+                <div class="buttons">
+                    <div id="bombsNB">Bomb: 10</div>
+                </div>
+                <div class="buttons">
+                    <div id="removeBomb" onclick="removeBomb();">-</div>
+                    <div id="addBomb" onclick="addBomb();">+</div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="buttons">
+                    <div id="gridSize">Grid: 10</div>
+                </div>
+                <div class="buttons">
+                    <div id="removeGrid" onclick="removeGrid();">-</div>
+                    <div id="addGrid" onclick="addGrid();">+</div>
+                </div>
+            </div>
+        </div>
+        <div id="board"></div>
+        <div class="buttons">
+            <div id="start" onclick="generateBoard();">Restart</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

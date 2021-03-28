@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#fiche {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 90em;
+    height: 60em;
+    border: 5px solid black;
+    display: flex;
+}
+
+/*
+    HEADER
+*/
+
+#header>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* PFP */
+
+#profile {
+    padding: 2em;
+}
+
+#name {
+    margin-top: 0;
+    text-align: center;
+}
+
+#pfp {
+    width: 10em;
+    border: 5px solid black;
+}
+
+/* STATS */
+
+#stats {
+    padding: 2em;
+    width: 20em;
+    text-align: center;
+}
+
+#stats * {
+    margin: 0;
+    font-weight: bold;
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#stats>div>div {
+    margin: 0.75em;
+    width: 15em;
+    height: 1.5em;
+    border: 3px solid black;
+    border-radius: 1em;
+    color: white;
+}
+
+.bar>div {
+    height: 1.5em;
+    border-radius: 1em;
+}
+
+#hp {
+    background-color: rgb(226, 29, 29);
+    width: 6em;
+}
+
+#mp {
+    background-color: rgb(150, 78, 218);
+    width: 15em;
+}
+
+#esp {
+    background-color: rgb(67, 187, 235);
+    width: 11em;
+}
+
+#str {
+    background-color: rgb(255, 0, 200);
+    width: 2em;
+}
+
+#ch {
+    background-color: rgb(233, 130, 47);
+    width: 7em;
+}
+
+#dex {
+    background-color: rgb(54, 233, 84);
+    width: 15em;
+}
+
+/*
+    BODY
+*/
+
+#body {
+    padding: 2em;
+}
+
+.icone {
+    height: 3em;
+}
+
+.emote {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#inventory {
+    margin: 2em;
+}
+
+#inventory tr td {
+    height: 9em;
+    width: 9em;
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
+    border-radius: 2em;
+    text-align: center;
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.number {
+    margin: 0.2em;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case:hover+.item_description {
+    display: inline-block;
+}
+
+.item_description {
+    display: none;
+    position: absolute;
+    border: 1px solid #000;
+    width: 10em;
+    margin-left: 10px;
+    margin-top: -10em;
+    border-radius: 0.5em;
+    background-color: white;
+}

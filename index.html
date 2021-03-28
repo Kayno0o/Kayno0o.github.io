@@ -2,57 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="./styles/main.css">
-    <title>Main Kayno0o page</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+	<title>Fiche JDR</title>
 </head>
 
 <body>
-    <div id="left-menu">
-        <h1>Welcome to my first website !</h1>
-        <p>
-            I hope you will enjoy it !
-        </p>
-
-        <div>
-            <h3>Games</h3>
-            <ul class="menu-list">
-                <li><a href="./Pages/Games/Minesweeper/index.html">Minesweeper</a></li>
-                <li><a href="./Pages/Games/Tetris/index.html">Tetris</a></li>
-                <li><a href="./Pages/Games/Snake/index.html">Snake</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Minecraft Plugins</h3>
-            <ul class="menu-list">
-                <li><a href="./Pages/plugins/one block/index.html">One block mode</a></li>
-                <!--<li>Chill Bot</li>
-                <li>Chill Bot</li>-->
-            </ul>
-        </div>
-
-        <div>
-            <h3>Discord Bots</h3>
-            <ul class="menu-list">
-                <li><a href="./Pages/bots/chill bot/index.html">Chill Bot</a></li>
-                <!--<li>Chill Bot</li>
-                <li>Chill Bot</li>-->
-            </ul>
-        </div>
-
-        <div>
-            <h3>Other</h3>
-            <ul class="menu-list">
-                <li><a href="./Pages/other/gallery/index.html">My Drawings</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div id="space"></div>
-
+	<div id="fiche">
+		<div id="header">
+			<div>
+				<div id="profile">
+					<h2 id="name">Kyan Fawcett</h2>
+					<img id="pfp" src="./assets/pfp.jpg" />
+				</div>
+				<div id="stats">
+					<h2>Stats</h2>
+					<div class="stat">
+						hp: 6
+						<div class="bar">
+							<div id="hp"></div>
+						</div>
+					</div>
+					<div class="stat">
+						mp: 15
+						<div class="bar">
+							<div id="mp"></div>
+						</div>
+					</div>
+					<div class="stat">
+						esp: 7
+						<div class="bar">
+							<div id="esp"></div>
+						</div>
+					</div>
+					<div class="stat">
+						str: 1
+						<div class="bar">
+							<div id="str"></div>
+						</div>
+					</div>
+					<div class="stat">
+						ch: 5
+						<div class="bar">
+							<div id="ch"></div>
+						</div>
+					</div>
+					<div class="stat">
+						dex: 8
+						<div class="bar">
+							<div id="dex"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<table id="inventory">
+				<tr>
+					<td>
+						<div class="case">
+							<p class="number">
+								<img class="icone" src="assets/piece.png" alt="piece">
+								x5
+							</p>
+						</div>
+						<div class="item_description">Un simple sac d'or.<br>De la bonne moula !</div>
+					</td>
+					<td>
+						<div class="case">
+							<p class="number">
+								<img class="icone" src="assets/fiole.png" alt="fiole">
+								x1
+							</p>
+						</div>
+						<div class="item_description">Une potion de mana qui redonne 50% du mana max instantanément ! :o</div>
+					</td>
+					<td>
+						<div class="case">
+							<div class="number">
+								<img class="icone" src="assets/bandage.png" alt="bandage">
+								x2
+							</div>
+						</div>
+						<div class="item_description">Un simple bout de tissu qui sert a soigner de petites plaies.</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="case">
+							<div class="number">
+								<img class="icone" src="assets/poignard.png" alt="poignard">
+								x1
+							</div>
+						</div>
+						<div class="item_description">Un bout de métal taillé en pointe pour... Tuer ?</div>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div id="body">
+			<div id="characteristics">
+				<h1>Caractéristiques</h1>
+				<h3>Elfe</h3>
+				<ul>
+					<li>
+						familiarité avec les animaux
+					</li>
+				</ul>
+				<h3>Mage 💧</h3>
+				<ul>
+					<li>
+						<b>Elémentaliste (E)</b><br>
+						Utilisation de la magie offensive(feu, eau, terre, air)
+						<ul>
+							<li>
+								<b>Elémentaliste :</b> Maîtrise des sorts sur 1 élément
+							</li>
+							<li>
+								<b>Elémentaliste + :</b> Maîtrise des sorts + sur un élément OU maîtrise des sortsde
+								niveau 1 sur deux éléments
+							</li>
+						</ul>
+					</li>
+					<li>
+						<b>Purificateur (E)</b><br>
+						Utilisation de la magie défensive (+10E)
+						<ul>
+							<li>
+								<b>Purificateur :</b> Maîtrise des sorts de magie naturelle niveau 1
+							</li>
+							<li>
+								<b>Purificateur + :</b> Maîtrise des sorts de magie naturelle niveau 2
+							</li>
+						</ul>
+					</li>
+					<li>
+						<b>Métamorphose :</b><br>
+						Transforme un ennemi en poulet (utilisable si le mob a moins de 50% de sa vie, 1
+						fois par jour, dès qu’on l’attaque l’ennemi reprend sa forme de base) (1PM)
+					</li>
+				</ul>
+				<h3>Autre</h3>
+				<ul>
+					<li>
+						<b>Marchand (C)</b><br>
+						Maitrise du marchandage (faire baisser les prix, ne pas se faire rouler, connaît la valeur des
+						objets)
+					</li>
+				</ul>
+			</div>
+			<div id="story">
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
